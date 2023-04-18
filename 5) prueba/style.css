@@ -1,0 +1,9 @@
+.estiloNombrePokemon {
+    color: black;
+    background-color: rgb(163 163 163);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 4px 8px;
+    text-transform: capitalize;
+}

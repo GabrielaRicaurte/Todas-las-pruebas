@@ -1,0 +1,184 @@
+body {
+    background-color: beige;
+}
+
+.caja {
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    margin: 5px;
+}
+
+.caja-2 {
+    border: 1px solid rgb(70, 69, 69);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    margin: 5px;
+}
+
+.container {
+    border: 1px solid black;
+    background: #ccc;
+    padding: 20px;
+}
+
+.container-2 {
+    border: 1px solid black;
+    background: #ccc;
+    padding: 20px;
+    height: 500px;
+}
+
+/********************************************/ 
+
+.flex-container {
+    display: flex;
+}
+
+/********************************************/
+
+.flex-container-direction {
+    display: flex;
+    flex-direction: row; /* direccion del flex - row + column + row-reverse + column-reverse */
+    flex-wrap: wrap; /* para que el flex continue en otra linea */
+    flex-flow: row wrap; /* une flex-wrap y flex-direction */
+    
+}
+
+/********************************************/
+
+/* 
+    justify-content > Define cómo el navegador distribuye el espacio entre y alrededor de los elementos de contenido a lo largo del eje principal 
+    de un contenedor flexible y el eje en línea de un contenedor de cuadrícula.
+*/
+
+.flex-container-justify-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/********************************************/
+
+/* 
+
+    aling-items > Establece el align-selfvalor en todos los hijos directos como grupo. En Flexbox, controla la alineación de los elementos en el eje transversal. 
+    En Diseño de cuadrícula, controla la alineación de elementos en el Eje de bloque dentro de su área de cuadrícula. 
+*/
+
+.flex-container-aling-items {
+    display: flex;
+    /* align-items: end; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/********************************************/
+
+/*
+    align-content > Establece la distribución del espacio entre y alrededor de los elementos de contenido a lo largo del eje transversal de un cuadro flexible o 
+    el eje de bloque de una cuadrícula. 
+*/
+
+.flex-container-aling-content {
+    display: flex;
+    align-content: center;
+    flex-flow: row wrap;
+
+}
+
+/********************************************/
+
+.flex-container-order {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+
+}
+
+.c1 {
+    background-color: rgb(133, 7, 133);
+    order: 3;
+}
+
+.c2 {
+    background-color: rgb(32, 32, 230);
+    order: 1;
+}
+
+.c3 {
+    background-color: rgb(96, 30, 157);
+    order: 2;
+}
+
+/********************************************/
+
+.flex-container-flex-grow {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+
+}
+
+.c1-2 {
+    background-color: rgb(133, 7, 133);
+    order: 3;
+
+    flex-grow: 5;
+}
+
+.c2-2 {
+    background-color: rgb(32, 32, 230);
+    order: 1;
+
+    flex-grow: 7;
+}
+
+.c3-2 {
+    background-color: rgb(96, 30, 157);
+    order: 2;
+
+    flex-grow: 2;
+}
+
+/********************************************/
+
+.flex-container-flex-basis {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+
+}
+
+.c1-3 {
+    background-color: rgb(133, 7, 133);
+    order: 3;
+
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.c2-3 {
+    background-color: rgb(32, 32, 230);
+    order: 1;
+
+    flex-grow: 1;
+}
+
+.c3-3 {
+    background-color: rgb(96, 30, 157);
+    order: 2;
+
+    flex-grow: 1;
+}

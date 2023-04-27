@@ -45,7 +45,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   var nextTick = setTimeout;
 
-  var noop = function noop() {};
+  var noop = function noop() { };
 
   function raf(func) {
     return requestAnimationFrame(func);
@@ -292,10 +292,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   }
 
   var min = Math.min,
-      max = Math.max,
-      floor = Math.floor,
-      ceil = Math.ceil,
-      abs = Math.abs;
+    max = Math.max,
+    floor = Math.floor,
+    ceil = Math.ceil,
+    abs = Math.abs;
 
   function approximatelyEqual(x, y, epsilon) {
     return abs(x - y) < epsilon;
@@ -749,8 +749,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Elements(Splide2, Components2, options) {
     var _EventInterface = EventInterface(Splide2),
-        on = _EventInterface.on,
-        bind = _EventInterface.bind;
+      on = _EventInterface.on,
+      bind = _EventInterface.bind;
 
     var root = Splide2.root;
     var i18n = options.i18n;
@@ -863,16 +863,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   function Slide$1(Splide2, index, slideIndex, slide) {
     var event = EventInterface(Splide2);
     var on = event.on,
-        emit = event.emit,
-        bind = event.bind;
+      emit = event.emit,
+      bind = event.bind;
     var Components = Splide2.Components,
-        root = Splide2.root,
-        options = Splide2.options;
+      root = Splide2.root,
+      options = Splide2.options;
     var isNavigation = options.isNavigation,
-        updateOnMove = options.updateOnMove,
-        i18n = options.i18n,
-        pagination = options.pagination,
-        slideFocus = options.slideFocus;
+      updateOnMove = options.updateOnMove,
+      i18n = options.i18n,
+      pagination = options.pagination,
+      slideFocus = options.slideFocus;
     var resolve = Components.Direction.resolve;
     var styles = getAttribute(slide, "style");
     var label = getAttribute(slide, ARIA_LABEL);
@@ -1021,13 +1021,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Slides(Splide2, Components2, options) {
     var _EventInterface2 = EventInterface(Splide2),
-        on = _EventInterface2.on,
-        emit = _EventInterface2.emit,
-        bind = _EventInterface2.bind;
+      on = _EventInterface2.on,
+      emit = _EventInterface2.emit,
+      bind = _EventInterface2.bind;
 
     var _Components2$Elements = Components2.Elements,
-        slides = _Components2$Elements.slides,
-        list = _Components2$Elements.list;
+      slides = _Components2$Elements.slides,
+      list = _Components2$Elements.list;
     var Slides2 = [];
 
     function mount() {
@@ -1167,18 +1167,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Layout(Splide2, Components2, options) {
     var _EventInterface3 = EventInterface(Splide2),
-        on = _EventInterface3.on,
-        bind = _EventInterface3.bind,
-        emit = _EventInterface3.emit;
+      on = _EventInterface3.on,
+      bind = _EventInterface3.bind,
+      emit = _EventInterface3.emit;
 
     var Slides = Components2.Slides;
     var resolve = Components2.Direction.resolve;
     var _Components2$Elements2 = Components2.Elements,
-        root = _Components2$Elements2.root,
-        track = _Components2$Elements2.track,
-        list = _Components2$Elements2.list;
+      root = _Components2$Elements2.root,
+      track = _Components2$Elements2.track,
+      list = _Components2$Elements2.list;
     var getAt = Slides.getAt,
-        styleSlides = Slides.style;
+      styleSlides = Slides.style;
     var vertical;
     var rootRect;
     var overflow;
@@ -1307,7 +1307,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var event = EventInterface(Splide2);
     var on = event.on;
     var Elements = Components2.Elements,
-        Slides = Components2.Slides;
+      Slides = Components2.Slides;
     var resolve = Components2.Direction.resolve;
     var clones = [];
     var cloneCount;
@@ -1391,22 +1391,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Move(Splide2, Components2, options) {
     var _EventInterface4 = EventInterface(Splide2),
-        on = _EventInterface4.on,
-        emit = _EventInterface4.emit;
+      on = _EventInterface4.on,
+      emit = _EventInterface4.emit;
 
     var set = Splide2.state.set;
     var _Components2$Layout = Components2.Layout,
-        slideSize = _Components2$Layout.slideSize,
-        getPadding = _Components2$Layout.getPadding,
-        totalSize = _Components2$Layout.totalSize,
-        listSize = _Components2$Layout.listSize,
-        sliderSize = _Components2$Layout.sliderSize;
+      slideSize = _Components2$Layout.slideSize,
+      getPadding = _Components2$Layout.getPadding,
+      totalSize = _Components2$Layout.totalSize,
+      listSize = _Components2$Layout.listSize,
+      sliderSize = _Components2$Layout.sliderSize;
     var _Components2$Directio = Components2.Direction,
-        resolve = _Components2$Directio.resolve,
-        orient = _Components2$Directio.orient;
+      resolve = _Components2$Directio.resolve,
+      orient = _Components2$Directio.orient;
     var _Components2$Elements3 = Components2.Elements,
-        list = _Components2$Elements3.list,
-        track = _Components2$Elements3.track;
+      list = _Components2$Elements3.list,
+      track = _Components2$Elements3.track;
     var Transition;
 
     function mount() {
@@ -1552,16 +1552,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Controller(Splide2, Components2, options) {
     var _EventInterface5 = EventInterface(Splide2),
-        on = _EventInterface5.on,
-        emit = _EventInterface5.emit;
+      on = _EventInterface5.on,
+      emit = _EventInterface5.emit;
 
     var Move = Components2.Move;
     var getPosition = Move.getPosition,
-        getLimit = Move.getLimit,
-        toPosition = Move.toPosition;
+      getLimit = Move.getLimit,
+      toPosition = Move.toPosition;
     var _Components2$Slides = Components2.Slides,
-        isEnough = _Components2$Slides.isEnough,
-        getLength = _Components2$Slides.getLength;
+      isEnough = _Components2$Slides.isEnough,
+      getLength = _Components2$Slides.getLength;
     var omitEnd = options.omitEnd;
     var isLoop = Splide2.is(LOOP);
     var isSlide = Splide2.is(SLIDE);
@@ -1624,8 +1624,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       if (isString(control)) {
         var _ref = control.match(/([+\-<>])(\d+)?/) || [],
-            indicator = _ref[1],
-            number = _ref[2];
+          indicator = _ref[1],
+          number = _ref[2];
 
         if (indicator === "+" || indicator === "-") {
           index = computeDestIndex(currIndex + +("" + indicator + (+number || 1)), currIndex);
@@ -1774,14 +1774,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   function Arrows(Splide2, Components2, options) {
     var event = EventInterface(Splide2);
     var on = event.on,
-        bind = event.bind,
-        emit = event.emit;
+      bind = event.bind,
+      emit = event.emit;
     var classes = options.classes,
-        i18n = options.i18n;
+      i18n = options.i18n;
     var Elements = Components2.Elements,
-        Controller = Components2.Controller;
+      Controller = Components2.Controller;
     var placeholder = Elements.arrows,
-        track = Elements.track;
+      track = Elements.track;
     var wrapper = placeholder;
     var prev = Elements.prev;
     var next = Elements.next;
@@ -1886,16 +1886,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Autoplay(Splide2, Components2, options) {
     var _EventInterface6 = EventInterface(Splide2),
-        on = _EventInterface6.on,
-        bind = _EventInterface6.bind,
-        emit = _EventInterface6.emit;
+      on = _EventInterface6.on,
+      bind = _EventInterface6.bind,
+      emit = _EventInterface6.emit;
 
     var interval = RequestInterval(options.interval, Splide2.go.bind(Splide2, ">"), onAnimationFrame);
     var isPaused = interval.isPaused;
     var Elements = Components2.Elements,
-        _Components2$Elements4 = Components2.Elements,
-        root = _Components2$Elements4.root,
-        toggle = _Components2$Elements4.toggle;
+      _Components2$Elements4 = Components2.Elements,
+      root = _Components2$Elements4.root,
+      toggle = _Components2$Elements4.toggle;
     var autoplay = options.autoplay;
     var hovered;
     var focused;
@@ -1993,7 +1993,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Cover(Splide2, Components2, options) {
     var _EventInterface7 = EventInterface(Splide2),
-        on = _EventInterface7.on;
+      on = _EventInterface7.on;
 
     function mount() {
       if (options.cover) {
@@ -2031,15 +2031,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Scroll(Splide2, Components2, options) {
     var _EventInterface8 = EventInterface(Splide2),
-        on = _EventInterface8.on,
-        emit = _EventInterface8.emit;
+      on = _EventInterface8.on,
+      emit = _EventInterface8.emit;
 
     var set = Splide2.state.set;
     var Move = Components2.Move;
     var getPosition = Move.getPosition,
-        getLimit = Move.getLimit,
-        exceededLimit = Move.exceededLimit,
-        translate = Move.translate;
+      getLimit = Move.getLimit,
+      exceededLimit = Move.exceededLimit,
+      translate = Move.translate;
     var isSlide = Splide2.is(SLIDE);
     var interval;
     var callback;
@@ -2124,22 +2124,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Drag(Splide2, Components2, options) {
     var _EventInterface9 = EventInterface(Splide2),
-        on = _EventInterface9.on,
-        emit = _EventInterface9.emit,
-        bind = _EventInterface9.bind,
-        unbind = _EventInterface9.unbind;
+      on = _EventInterface9.on,
+      emit = _EventInterface9.emit,
+      bind = _EventInterface9.bind,
+      unbind = _EventInterface9.unbind;
 
     var state = Splide2.state;
     var Move = Components2.Move,
-        Scroll = Components2.Scroll,
-        Controller = Components2.Controller,
-        track = Components2.Elements.track,
-        reduce = Components2.Media.reduce;
+      Scroll = Components2.Scroll,
+      Controller = Components2.Controller,
+      track = Components2.Elements.track,
+      reduce = Components2.Media.reduce;
     var _Components2$Directio2 = Components2.Direction,
-        resolve = _Components2$Directio2.resolve,
-        orient = _Components2$Directio2.orient;
+      resolve = _Components2$Directio2.resolve,
+      orient = _Components2$Directio2.orient;
     var getPosition = Move.getPosition,
-        exceededLimit = Move.exceededLimit;
+      exceededLimit = Move.exceededLimit;
     var basePosition;
     var baseEvent;
     var prevBaseEvent;
@@ -2352,9 +2352,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Keyboard(Splide2, Components2, options) {
     var _EventInterface10 = EventInterface(Splide2),
-        on = _EventInterface10.on,
-        bind = _EventInterface10.bind,
-        unbind = _EventInterface10.unbind;
+      on = _EventInterface10.on,
+      bind = _EventInterface10.bind,
+      unbind = _EventInterface10.unbind;
 
     var root = Splide2.root;
     var resolve = Components2.Direction.resolve;
@@ -2418,10 +2418,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function LazyLoad(Splide2, Components2, options) {
     var _EventInterface11 = EventInterface(Splide2),
-        on = _EventInterface11.on,
-        off = _EventInterface11.off,
-        bind = _EventInterface11.bind,
-        emit = _EventInterface11.emit;
+      on = _EventInterface11.on,
+      off = _EventInterface11.off,
+      bind = _EventInterface11.bind,
+      emit = _EventInterface11.emit;
 
     var isSequential = options.lazyLoad === "sequential";
     var events = [EVENT_MOVED, EVENT_SCROLLED];
@@ -2484,7 +2484,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function onLoad(data, e) {
       var img = data[0],
-          Slide = data[1];
+        Slide = data[1];
       removeClass(Slide.slide, CLASS_LOADING);
 
       if (e.type !== "error") {
@@ -2511,14 +2511,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   function Pagination(Splide2, Components2, options) {
     var event = EventInterface(Splide2);
     var on = event.on,
-        emit = event.emit,
-        bind = event.bind;
+      emit = event.emit,
+      bind = event.bind;
     var Slides = Components2.Slides,
-        Elements = Components2.Elements,
-        Controller = Components2.Controller;
+      Elements = Components2.Elements,
+      Controller = Components2.Controller;
     var hasFocus = Controller.hasFocus,
-        getIndex = Controller.getIndex,
-        go = Controller.go;
+      getIndex = Controller.getIndex,
+      go = Controller.go;
     var resolve = Components2.Direction.resolve;
     var placeholder = Elements.pagination;
     var items = [];
@@ -2556,8 +2556,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     function createPagination() {
       var length = Splide2.length;
       var classes = options.classes,
-          i18n = options.i18n,
-          perPage = options.perPage;
+        i18n = options.i18n,
+        perPage = options.perPage;
       var max = hasFocus() ? Controller.getEnd() + 1 : ceil(length / perPage);
       list = placeholder || create("ul", classes.pagination, Elements.track.parentElement);
       addClass(list, paginationClasses = CLASS_PAGINATION + "--" + getDirection());
@@ -2668,7 +2668,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Sync(Splide2, Components2, options) {
     var isNavigation = options.isNavigation,
-        slideFocus = options.slideFocus;
+      slideFocus = options.slideFocus;
     var events = [];
 
     function mount() {
@@ -2741,7 +2741,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Wheel(Splide2, Components2, options) {
     var _EventInterface12 = EventInterface(Splide2),
-        bind = _EventInterface12.bind;
+      bind = _EventInterface12.bind;
 
     var lastTime = 0;
 
@@ -2783,7 +2783,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Live(Splide2, Components2, options) {
     var _EventInterface13 = EventInterface(Splide2),
-        on = _EventInterface13.on;
+      on = _EventInterface13.on;
 
     var track = Components2.Elements.track;
     var enabled = options.live && !options.isNavigation;
@@ -2922,8 +2922,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   function Slide(Splide2, Components2, options) {
     var Move = Components2.Move,
-        Controller = Components2.Controller,
-        Scroll = Components2.Scroll;
+      Controller = Components2.Controller,
+      Scroll = Components2.Scroll;
     var list = Components2.Elements.list;
     var transition = apply(style, list, "transition");
     var endCallback;
@@ -3014,7 +3014,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       var _this = this;
 
       var state = this.state,
-          Components2 = this.Components;
+        Components2 = this.Components;
       assert(state.is([CREATED, DESTROYED]), "Already mounted!");
       state.set(CREATED);
       this._C = Components2;
@@ -3107,7 +3107,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       var event = this.event,
-          state = this.state;
+        state = this.state;
 
       if (state.is(CREATED)) {
         EventInterface(this).on(EVENT_READY, this.destroy.bind(this, completely));
